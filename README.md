@@ -17,14 +17,14 @@ __Install Django
 pip install django
 
 __Create Django Project
-django-admin startproject config .
+django-admin startproject **app name** .
 (Note: The trailing . creates the project in the current directory)
 
 __Create Requirements File
 pip freeze > requirements.txt
 
 __Create Django App
-python3 manage.py startapp **app name**
+python3 manage.py startapp **next app name**
 
 __Add **app name** to INSTALLED_APPS in config.settings.py
 INSTALLED_APPS = [
@@ -44,12 +44,12 @@ __Create Superuser
 python3 manage.py createsuperuser
 
 __Commit to Github
-
 git add .
-
 git commit -m 'Skeleton Django Project'
-
 git push origin main
 
 __Run Dev Server
 python3 manage.py runserver
+
+http://localhost:8000/
+http://localhost:8000/admin/
