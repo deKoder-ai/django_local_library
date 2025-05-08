@@ -34,7 +34,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    '**app name**',
+    #example below for app named catalog
+    'catalog.apps.CatalogConfig',
 ]
 
 __Run Initial Migration
@@ -53,3 +54,7 @@ python3 manage.py runserver
 
 http://localhost:8000/
 http://localhost:8000/admin/
+
+__Run These Commands Any Time Models Are Changed
+python3 manage.py makemigrations
+python3 manage.py migrate
