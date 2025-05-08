@@ -44,8 +44,11 @@ __Create Superuser
 python3 manage.py createsuperuser
 
 __Commit to Github
+
 git add .
+
 git commit -m 'Skeleton Django Project'
+
 git push origin main
 
 __Run Dev Server
